@@ -8,6 +8,9 @@ gem 'rails', '3.0.5'
 gem 'sqlite3'
 gem 'acts-as-taggable-on'
 
+gem 'ckeditor', :git => 'git://github.com/galetahub/rails-ckeditor.git', :branch => 'rails3'
+
+
 # Use unicorn as the web server
 # gem 'unicorn'
 
