@@ -14,7 +14,7 @@
   <tr>
     <td><%= article.title %></td>
     <td><%= article.abstract %></td>
-    <td><%= article.main_body %></td>
+    <td><%= raw article.main_body %></td>
     <td><%= article.keyword_list %></td>
     <td><%= link_to 'Show', article %></td>
     <td><%= link_to 'Edit', edit_article_path(article) %></td>

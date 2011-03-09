@@ -5,7 +5,7 @@
    <% @articles.each do |article| %>
      <td><%= article.title %></td>
      <td><%= article.abstract %></td>
-     <td><p><%= article.main_body %></p></td>
+     <td><p><%= raw article.main_body %></p></td>
 
      <td>
        <% article.keyword_list.each do |keyword|  %>
