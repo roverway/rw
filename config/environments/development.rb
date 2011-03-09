@@ -22,5 +22,9 @@ Rw::Application.configure do
 
   # Only use best-standards-support built into browsers
   config.action_dispatch.best_standards_support = :builtin
+
+  # show path of imagemagic for plugin paperclip
+  Paperclip.options[:command_path] = "/usr/bin/"
+
 end
 
