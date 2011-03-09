@@ -1,0 +1,12 @@
+<h1>Welcome#index</h1>
+
+<div id="body_list">
+ <table>
+   <% @articles.each do |article| %>
+     <td><%= article.title %></td>
+     <td><%= article.abstract %></td>
+     <td><p><%= article.main_body %></p></td>
+     <td><p><%= article.keyword_list %></p></td>
+   <% end %>
+ </table>
+</div>

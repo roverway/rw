@@ -1,0 +1,2 @@
+module TaggedPostHelper
+end

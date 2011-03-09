@@ -1,0 +1,10 @@
+<h1>TaggedPost#index</h1>
+<div id="body_list">
+<table>
+  <% @tagged_posts.each do |post| %>
+      <td><%= post.title %></td>
+      <td><%= post.abstract %></td>
+      <td><%= post.main_body %></td>
+  <% end %>
+</table>
+</div>
