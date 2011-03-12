@@ -1,8 +1,10 @@
 class ArticlesController < ApplicationController
   # GET /articles
   # GET /articles.xml
+
   def index
     @articles = Article.all
+    @tags = Article.tag_counts_on(:keywords)
 
     respond_to do |format|
       format.html # index.html.erb
