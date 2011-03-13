@@ -1,4 +1,10 @@
-body { background-color: black; color: #333; }
+body {
+  background: white;
+  color: black;
+  font: Georgia,serif;
+  text-align: left;
+  vertical-align: middle;
+}
 
 body, p, ol, ul, td {
   font-family: verdana, arial, helvetica, sans-serif;

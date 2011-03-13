@@ -7,59 +7,124 @@
 
 /*banner*/
 #banner {
-    width:100%; 
-    height:50px; 
-    margin:0 auto; 
-    background:#06f;
+  color: #205020;
+  width:100%; 
+  height:50px; 
+  margin:0 auto; 
 }
 
+#banner img {
+  float:left;
+}
+
+#navcontainer {
+  text-shadow: grey 2px 2px 2px;
+}
+
+/*navlist*/
+#navlist {
+  font: bold 14px verdana;
+  list-style-type: none;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #6c6;
+  margin: 1px;
+}
+
+#navlist li {
+  float: left;
+  height: 22px;
+  background-color: #cfc;
+  margin: 2px 2px 0 2px;
+  border: 1px solid #6c6;
+  /*position:relative;*/
+  /*left: 35%;*/
+
+}
+
+li#active a {
+  border-bottom: 1px solid #fff;
+  background-color: #fff;
+}
+
+li#active a { color: #003399; }
+#navlist a {
+  float: left;
+  display: block;
+  color: #666;
+  text-decoration: none;
+  padding: 4px;
+}
+#navlist a:hover { background: #fff; } 
+
+/*three column style starts here*/
 #container3 {
-    float:left;
-    width:100%;
-    background:green;
-    overflow:hidden;
-    position:relative;
+  float:left;
+  width:100%;
+  /*background: #202020;*/
+  overflow:hidden;
+  position:relative;
+
 }
 #container2 {
-    float:left;
-    width:100%;
-    background:yellow;
-    position:relative;
-    right:25%;
+  float:left;
+  width:100%;
+  /*background:yellow;*/
+  position:relative;
+  right:15%;
 }
 #container1 {
-    float:left;
-    width:100%;
-    background:red;
-    position:relative;
-    right:50%;
+  float:left;
+  width:100%;
+  /*background:red;*/
+  position:relative;
+  right:65%;
+
 }
 #left {
-    float:left;
-    width:21%;
-    position:relative;
-    left:77%;
-    overflow:hidden;
+  float:left;
+  width:13%;
+  position:relative;
+  left:81%;
+  overflow:hidden;
+  text-align: right;
 }
+
 #main {
-    float:left;
-    width:46%;
-    position:relative;
-    left:81%;
-    overflow:hidden;
+  float:left;
+  width:63%;
+  position:relative;
+  left:82%;
+  overflow:hidden;
+  /*background: #d5e9f6;*/
+  padding: 1%;
+
+  box-shadow: 0px 3px 4px #000;
+  -moz-box-shadow: 0px 3px 9px #000;
+  -webkit-box-shadow: 0px 3px 4px #000;
+  filter: progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='#000000');
+  -ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='#000000')";
 }
 #right {
-    float:left;
-    width:21%;
-    position:relative;
-    left:85%;
-    overflow:hidden;
+  float:left;
+  width:18%;
+  position:relative;
+  left:83%;
+  overflow:hidden;
+  text-align: left;
+}
+
+/*bottom of the page*/
+#bottom_line{
+  clear:both;
+  width:100%;
+  border-bottom:1px solid grey;
 }
 
 #footer {
+  text-shadow: black 2px 2px 2px;
+  color: #7ea547;
   clear:both;
   width:100%; 
   height:60px; 
   margin:0 auto; 
-  background:grey;
 }
