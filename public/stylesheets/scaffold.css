@@ -1,13 +1,13 @@
 body {
-  background: #202020;
-  color: grey;
+  background: black;
+  color: #121212;
   font: Georgia,serif;
   text-align: left;
   vertical-align: middle;
 }
 
 body, p, ol, ul, td {
-  font-family: verdana, arial, helvetica, sans-serif;
+  font-family: sans-serif;
   font-size:   13px;
   line-height: 18px;
 }

@@ -8,31 +8,29 @@
 </head>
 
 <div id = "banner" >
-  <%= image_tag("banner_rover_way.png") %>
-  <h2> Linux & Rails </h2>
-
+  <h1>Rover Way <span> Records of my Linux and Rails </span> </h1>
 </div>
-    <div id="navlist">
-      <p><%= link_to "Home", welcome_index_url %></p>
-      <p><%= link_to "Admin", articles_url %></p>
-      <p><a href="#">AboutMe</a></p>
-      <p><a href="#">Link 3</a></p>
-      <p><a href="#">Link 4</a></p>
-    </div>
 
-
+   
 <div id = "container3" >
   <div id = "container2">
     <div id = "container1">
 
       <div id = "left" >
+        <div id="navlist">
+          <p><%= link_to "Home", welcome_index_url %></p>
+          <p><%= link_to "Admin", articles_url %></p>
+          <p><a href="#">About Me</a></p> 
+          <br />
+        </div>
+
         <% if @tags %>
           <%= render 'tagged_post/tag_cloud' %>
         <% end %>
       </div>
 
       <div id = "main">
-        <%= yield %>
+          <%= yield %>
       </div>
 
       <div id = "right">

@@ -1,6 +1,5 @@
-<h1>Listing articles</h1>
-
 <% @articles.each do |article| %>
+  <div id = "post" >
     <h1><%= article.title %></h1>
     <p><%= article.abstract %></p>
     <p><%= raw article.main_body %></p>
@@ -10,6 +9,7 @@
       <td><%= link_to 'Edit', edit_article_path(article) %></td>
       <td><%= link_to 'Destroy', article, :confirm => 'Are you sure?', :method => :delete %></td>
     </tr>
+  </div>
 <% end %>
 
 <br />
