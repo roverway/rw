@@ -1,21 +1,15 @@
-<h3>Welcome#index</h3>
+<% @articles.each do |article| %>
+  <div id="post">
+    <h2><%= article.title %></h2>
+    <p><%= raw article.main_body %></p>
 
-<div id="body_list">
- <table>
-   <% @articles.each do |article| %>
-     <h1><%= article.title %></h1>
-     <p><%= article.abstract %></p>
-     <p><%= raw article.main_body %></p>
-
-     <p> keyword: 
-       <% article.keyword_list.each do |keyword|  %>
-         <%= link_to keyword, { :action => :index, 
-           :controller => :tagged_post, 
-           :tag_name=> keyword } %>
-       <% end %>
-     </p>
-
-
-   <% end %>
- </table>
-</div>
+    <p> keyword: 
+    <% article.keyword_list.each do |keyword|  %>
+      <%= link_to keyword, { :action => :index, 
+        :controller => :tagged_post, 
+        :tag_name=> keyword }
+      %>
+    <% end %>
+    </p>
+  </div>
+<% end %>

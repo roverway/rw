@@ -1,4 +1,6 @@
 Rw::Application.routes.draw do
+  get "related_cmt/show"
+
   resources :comments
 
   get "tagged_post/tag_cloud"

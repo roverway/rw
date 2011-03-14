@@ -1,30 +1,15 @@
 <p id="notice"><%= notice %></p>
 
-<p>
-  <b>Title:</b>
-  <%= @article.title %>
-</p>
+<h2> <%= @article.title %> </h2>
+<p> <%= sanitize @article.main_body %> </p>
 
 <p>
-  <b>Abstract:</b>
-  <%= @article.abstract %>
-</p>
-
-<p>
-  <b>Main body:</b>
-  <%= sanitize @article.main_body %>
-</p>
-
-<p>
-  <b>KeyWords:</b>
-  <%= @article.keyword_list %>
+  <b>KeyWords:</b> <%= @article.keyword_list %>
 </p>
 
 <%= link_to 'Edit', edit_article_path(@article) %> |
 <%= link_to 'Back', articles_path %>
+<%= link_to 'comment', new_comment_path %>
+<br />
 
-<%= link_to 'reply', new_comment_path %>
-<p> article_id of this article is <%= session[:article_id] %> </p>
-
-<div id="comment" >
-</div>
+<%= render 'related_cmt/show' %>

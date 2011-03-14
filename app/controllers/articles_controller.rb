@@ -17,6 +17,7 @@ class ArticlesController < ApplicationController
   def show
     @article = Article.find(params[:id])
     session[:article_id] = @article.id
+    @related_cmts = Comment.find_by_sql("select * from comments where article_id = #{session[:article_id]}")
       
     respond_to do |format|
       format.html # show.html.erb
