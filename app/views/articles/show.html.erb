@@ -22,3 +22,9 @@
 
 <%= link_to 'Edit', edit_article_path(@article) %> |
 <%= link_to 'Back', articles_path %>
+
+<%= link_to 'reply', new_comment_path %>
+<p> article_id of this article is <%= session[:article_id] %> </p>
+
+<div id="comment" >
+</div>

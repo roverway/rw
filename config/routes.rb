@@ -1,4 +1,6 @@
 Rw::Application.routes.draw do
+  resources :comments
+
   get "tagged_post/tag_cloud"
   get "tagged_post/index"
 

@@ -1,0 +1,15 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  name: MyString
+  email: MyString
+  review: MyText
+  article_id: 1
+  reply_by: 1
+
+two:
+  name: MyString
+  email: MyString
+  review: MyText
+  article_id: 1
+  reply_by: 1
