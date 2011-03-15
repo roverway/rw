@@ -1,0 +1,53 @@
+/*style of tag cloud*/
+.css1 { font-size: 1.0em; }
+.css2 { font-size: 1.2em; }
+.css3 { font-size: 1.4em; }
+.css4 { font-size: 1.6em; }
+/*end of tag cloud style*/
+
+/*style of title_counter*/
+
+#title_counter h2 {
+  clear:both;
+  float:left;
+}
+#title_counter h1 {
+  float:right;
+  color: grey;
+  font-style: italic;
+}
+
+/*style of main_body*/
+#main_body {
+  clear:both;
+  color: black;
+  padding: 5px 8px 5px 8px;
+
+  box-shadow: 2px 2px 4px #888;
+  -moz-box-shadow: 2px 2px 4px #888;
+  -webkit-box-shadow: 2px 2px 2px #888;
+  filter: progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='#000000');
+  -ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='#000000')";
+}
+
+/*control_link: edit, show and destroy, etd.*/
+.control_link {
+  float:right;
+}
+
+/*add round border for the comment*/
+#round h1, #round h2, #round p {margin:0 10px; letter-spacing:1px;}
+#round h1,#round h2{font-size:2.5em; color:#fff;}
+#round p{color:grey}
+#round {background: transparent; margin:1em;text-align:left;}
+
+.xtop, .xbottom {display:block; background:transparent; font-size:1px;}
+.xb1, .xb2, .xb3, .xb4 {display:block; overflow:hidden;}
+.xb1, .xb2, .xb3 {height:1px;}
+.xb2, .xb3, .xb4 {background:#000; border-left:1px solid #000; border-right:1px solid #000;}
+.xb1 {margin:0 5px; background:#000;}
+.xb2 {margin:0 3px; border-width:0 2px;}
+.xb3 {margin:0 2px;}
+.xb4 {height:2px; margin:0 1px;}
+
+.xboxcontent {display:block; background:#000; border:0 solid #000; border-width:0 1px;}

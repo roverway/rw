@@ -1,13 +1,17 @@
 <% @articles.each do |article| %>
-  <div id = "post" >
+  <div id = "title_counter" >
     <h2><%= article.title %></h2>
+    <h1><%= @cmt_counter[article.id] %></h1>
+  </div>
+
+  <div id="main_body">
     <p><%= raw article.main_body %></p>
 
-    <tr>
+    <div class="control_link">
       <td><%= link_to 'Show', article %></td>
       <td><%= link_to 'Edit', edit_article_path(article) %></td>
       <td><%= link_to 'Destroy', article, :confirm => 'Are you sure?', :method => :delete %></td>
-    </tr>
+    </div>
 
     <p> keyword: 
     <% article.keyword_list.each do |keyword|  %>
@@ -17,7 +21,6 @@
       %>
     <% end %>
     </p>
-
   </div>
 <% end %>
 

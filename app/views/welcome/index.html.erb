@@ -1,6 +1,10 @@
 <% @articles.each do |article| %>
-  <div id="post">
+  <div id="title_counter">
     <h2><%= article.title %></h2>
+    <h1><%= @cmt_counter[article.id] %></h1>
+  </div>
+
+  <div id="main_body">
     <p><%= raw article.main_body %></p>
 
     <p> keyword: 

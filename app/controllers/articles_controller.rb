@@ -6,6 +6,11 @@ class ArticlesController < ApplicationController
     @articles = Article.all
     @tags = Article.tag_counts_on(:keywords)
 
+    @cmt_counter = Hash.new
+    @articles.each do |article|
+      @cmt_counter[article.id] = related_cmts(article.id).size
+    end
+
     respond_to do |format|
       format.html # index.html.erb
       format.xml  { render :xml => @articles }
@@ -17,7 +22,7 @@ class ArticlesController < ApplicationController
   def show
     @article = Article.find(params[:id])
     session[:article_id] = @article.id
-    @related_cmts = Comment.find_by_sql("select * from comments where article_id = #{session[:article_id]}")
+    @related_cmts = related_cmts(@article.id)
       
     respond_to do |format|
       format.html # show.html.erb
