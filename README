@@ -1,3 +1,10 @@
+install steps
+1. bundle install
+2. rake db:migrate
+3. rake db:seed
+4. rails server
+5. goto url localhost:3000/articles/
+
 == Welcome to Rails
 
 Rails is a web-application framework that includes everything needed to create
